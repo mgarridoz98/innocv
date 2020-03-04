@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AddUserActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="@dimen/w200"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mt130"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvfecha"
+            android:layout_width="@dimen/layout"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:text="@string/fecha"
+            android:textSize="@dimen/txt30" />
+
+        <ImageButton
+            android:id="@+id/btnpf"
+            android:layout_width="@dimen/layout"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p10"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_menu_my_calendar"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="112dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mt50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edUser"
+            android:layout_width="@dimen/w200"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/nameuser" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnaceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mt50"
+        android:text="@string/aceptar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

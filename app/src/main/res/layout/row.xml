@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorMalva"
+    card_view:cardCornerRadius="@dimen/cr16"
+    card_view:cardElevation="@dimen/ce1"
+    android:layout_margin="@dimen/m2"
+    android:onClick="onClickUser"
+    card_view:cardUseCompatPadding="false"
+    card_view:contentPadding="@dimen/p10">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivbarrow"
+        android:layout_width="@dimen/w80"
+        android:layout_height="@dimen/w80"
+        android:layout_marginStart="@dimen/m4"
+        android:layout_marginLeft="@dimen/m4"
+        android:layout_marginTop="@dimen/m4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_account"/>
+
+    <TextView
+        android:id="@+id/tvuser"
+        android:layout_width="@dimen/layout"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/m4"
+        android:layout_marginLeft="@dimen/m4"
+        android:layout_marginTop="@dimen/m4"
+        android:layout_marginEnd="@dimen/m4"
+        android:layout_marginRight="@dimen/m4"
+        android:gravity="center"
+        android:padding="@dimen/p10"
+        android:text="Perico"
+        android:textColor="@color/colorAzul"
+        android:textSize="@dimen/txt24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivbarrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

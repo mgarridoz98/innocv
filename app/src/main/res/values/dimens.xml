@@ -1,0 +1,18 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="layout">0dp</dimen>
+    <dimen name="w200">200dp</dimen>
+    <dimen name="mt50">50dp</dimen>
+    <dimen name="mt60">60dp</dimen>
+    <dimen name="mt130">130dp</dimen>
+    <dimen name="mt16">50dp</dimen>
+    <dimen name="m4">4dp</dimen>
+    <dimen name="m2">2dp</dimen>
+    <dimen name="w80">80dp</dimen>
+    <dimen name="p10">10dp</dimen>
+    <dimen name="txt24">24sp</dimen>
+    <dimen name="txt30">30sp</dimen>
+    <dimen name="cr16">16dp</dimen>
+    <dimen name="ce1">1dp</dimen>
+    <dimen name="mt13">13dp</dimen>
+</resources>
